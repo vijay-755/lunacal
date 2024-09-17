@@ -1,0 +1,81 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p::-webkit-scrollbar {
+  display: none;
+}
+p, .cardContainer {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}
+.WidgetShadow {
+  box-shadow: 5.67px 5.67px 3.78px 0px hsla(0, 0%, 0%, 0.4);
+
+}
+.line
+{
+  background: hsla(0, 0%, 97%, 0.1);
+  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.33);
+}
+.sideRectangle
+{
+  box-shadow: 4px 4px 4.9px 0px hsla(0, 0%, 0%, 0.25);
+}
+.Tabs
+{
+  box-shadow: 0px 4.96px 12.4px 20.48px hsla(0, 0%, 0%, 0.25) inset;
+
+}
+.Movable
+{
+  box-shadow: 
+  13.49px 16.87px 67.47px 8.43px hsla(0, 0%, 4%, 1), 
+  -8.43px -16.87px 50.6px -16.87px hsla(212, 22%, 36%, 1); 
+  
+
+}
+.btns::before
+{
+margin: 0.25rem;
+position: absolute;
+width: 0%;
+height:84%;
+border-radius: 1rem;
+top:0;
+left:0;
+z-index:10;
+content: '';
+background:rgba(31,33,36,255);
+opacity: 0.8;
+transition: all 0.35s linear;
+}
+.btns:hover::before
+{
+  width: 96%;
+}
+.Addimg
+{
+  box-shadow: 0px 3.26px 3.26px 0px rgba(255, 255, 255, 0.15) inset, 0px 0px 48.91px 0px rgba(255, 255, 255, 0.05) inset, 9px 10px 7.1px 0px rgba(0, 0, 0, 0.4),-0.5px -0.5px 6.9px 0px rgba(255, 255, 255, 0.25);
+
+}
+.Imgbtn
+{
+  box-shadow: 4px 5px 30px 5px #101213, 1px 1px 18px 1px #96BEE7;
+  
+}
+.Imgbtn:active 
+{
+  background: linear-gradient(to bottom right,rgb(142,180,223),rgb(44,51,60));
+ 
+}
+.Imgbtn svg {
+  color: gray;
+  transition: color 0.2s ease;
+}
+.Imgbtn:active svg 
+{
+  color: white;
+}
